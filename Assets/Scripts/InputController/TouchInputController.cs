@@ -1,0 +1,36 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class TouchInputController : IInputController
+{
+
+    private const int LEFT_MOUSE_BUTTON = 0;
+
+
+    public bool CheckInput(Vector3 emptyTilePosition, ref Vector3 hitPosition)
+    {
+#if UNITY_EDITOR
+        if (Input.GetMouseButtonUp(LEFT_MOUSE_BUTTON))
+        {
+            Vector3 inputPosition = Input.mousePosition;
+#else
+        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Ended)
+        {
+            Vector3 inputPosition = Input.touches[0].position;
+#endif
+            Ray inputRay = Camera.main.ScreenPointToRay(inputPosition);
+
+            float deltaX = Mathf.Abs(inputRay.origin.x - emptyTilePosition.x);
+			float deltaY = Mathf.Abs(inputRay.origin.y - emptyTilePosition.y);
+
+            if ((deltaX < Constants.TILE_SIZE * 1.5f && deltaY < Constants.TILE_SIZE * 0.5f) || 
+			    (deltaY < Constants.TILE_SIZE * 1.5f && deltaX < Constants.TILE_SIZE * 0.5f))
+            {
+                hitPosition = inputRay.origin;
+                return true;
+            }
+        }
+
+        return false;
+    }
+}

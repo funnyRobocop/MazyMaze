@@ -1,0 +1,23 @@
+# ninja log v5
+175	508	7520513183122585	C:/Projects/MazyMazeGame/PuzzleGameUnity-master/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6l4e4f5j/obj/armeabi-v7a/libswappywrapper.so	4525328b9fdf8286
+4	1166	7520513191430722	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a3f5b1c5671919cb
+22	175	7520513181541570	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	a52ba0094160f33e
+11	782	7520513187443973	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	5307c8fca430bc59
+18	715	7520513186879636	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	73e09e4d029f6376
+7	804	7520513187773103	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	5689b1827ac10571
+20	868	7520513188451746	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e30926ed5415f1ce
+9	853	7520513188296794	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	60ae88753f979fad
+15	856	7520513188341775	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	dc8197b0f96ac1c1
+13	1125	7520513191027164	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	696ccd50c3259f6
+1166	1253	7520513192313119	C:/Projects/MazyMazeGame/PuzzleGameUnity-master/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6l4e4f5j/obj/armeabi-v7a/libgame.so	1ad9bcc9748876e5
+26	177	7520515523725326	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	a52ba0094160f33e
+178	595	7520515526717764	C:/Projects/MazyMazeGame/PuzzleGameUnity-master/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6l4e4f5j/obj/armeabi-v7a/libswappywrapper.so	4525328b9fdf8286
+14	814	7520515530124131	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	73e09e4d029f6376
+12	828	7520515530244045	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	5307c8fca430bc59
+10	857	7520515530543253	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	5689b1827ac10571
+23	901	7520515531011989	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e30926ed5415f1ce
+17	957	7520515531573317	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	dc8197b0f96ac1c1
+8	959	7520515531573317	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	60ae88753f979fad
+4	1190	7520515533780278	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a3f5b1c5671919cb
+20	1224	7520515534254120	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	696ccd50c3259f6
+1224	1318	7520515535203367	C:/Projects/MazyMazeGame/PuzzleGameUnity-master/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6l4e4f5j/obj/armeabi-v7a/libgame.so	1ad9bcc9748876e5

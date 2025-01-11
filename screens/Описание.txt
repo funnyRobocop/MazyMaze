@@ -1,0 +1,25 @@
+Water maze
+
+Puzzle 15 game.
+
+A new cool version of the puzzle 15 game. Move the puzzle right, left, up or down and connect all pipes.
+
+What awaits you:
+- many super interesting levels
+- increase in complexity from simple to complex
+- simple but attractive cartoon graphics
+- 3 types of control: touch, swipe and accelerometer, play as you like
+
+Have fun!
+
+Супер пятнашки
+
+Новая крутая версия игры-головоломки пятнашки. Переместите пазл вправо, влево, вверх или вниз и соедините все трубы.
+
+Что вас ждет:
+- много супер интересных уровней
+- увеличение сложности от простого к сложному
+- простая, но привлекательная мультяшная графика 
+- 3 типа управления: касание, свайп и акселерометр, играйте как вам удобнее
+
+Проводите время весело!
