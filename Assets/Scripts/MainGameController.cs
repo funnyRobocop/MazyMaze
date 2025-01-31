@@ -1,4 +1,4 @@
-﻿
+﻿using YG;
 using UnityEngine;
 using System.Collections;
 using System;
@@ -37,6 +37,11 @@ public class MainGameController : MonoBehaviour
     void OnEnable()
     {
         RestartGame();
+    }
+
+    public void ShowInterstitial()
+    {
+        YG2.InterstitialAdvShow();
     }
 
     public void PauseGame()
