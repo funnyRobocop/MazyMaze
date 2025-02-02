@@ -7,7 +7,7 @@ public class MainGameController : MonoBehaviour
 {
 
 	private const int CAMERA_Z_POSITION = -10;
-	private const float CAMERA_SIZE_FACTOR = 2.15f;
+	private const float CAMERA_SIZE_FACTOR = 2.5f;
     private const float MIN_CAMERA_SIZE = 14f;
 
 
@@ -110,7 +110,7 @@ public class MainGameController : MonoBehaviour
 		                                              levelData.Rows * Constants.TILE_SIZE / 2 - Constants.TILE_SIZE / 2,
 		                                              CAMERA_Z_POSITION);
 
-		Camera.main.orthographicSize = (float)(levelData.Cols) * (float)Screen.height / (float)Screen.width * CAMERA_SIZE_FACTOR;
+		Camera.main.orthographicSize = MIN_CAMERA_SIZE + (levelData.Rows - 4) * CAMERA_SIZE_FACTOR;
 
         if (Camera.main.orthographicSize < MIN_CAMERA_SIZE)
             Camera.main.orthographicSize = MIN_CAMERA_SIZE;

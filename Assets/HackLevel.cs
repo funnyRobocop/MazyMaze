@@ -12,8 +12,8 @@ public class HackLevel : MonoBehaviour
     {
         if (GUI.Button(new Rect(10,10,50,50), ""))
         {
-            btn.onClick.Invoke();
-            return;
+            /*btn.onClick.Invoke();
+            return;*/
             
             if (level < 0)
                 return;
