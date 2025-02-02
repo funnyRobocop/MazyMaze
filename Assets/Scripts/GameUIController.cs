@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
+using YG;
 
 public class GameUIController : MonoBehaviour 
 {
@@ -30,7 +31,8 @@ public class GameUIController : MonoBehaviour
 
     public void SetLevelNumberText()
     {
-        levelNumberText.text = "УРОВЕНЬ: " + MainGameController.Instance.LevelData.LevelNumber;
+        levelNumberText.text = (YG2.lang == "ru" ? "УРОВЕНЬ " : "LEVEL ") + 
+            MainGameController.Instance.LevelData.LevelNumber;
     }
 
     public void ShowSettings()

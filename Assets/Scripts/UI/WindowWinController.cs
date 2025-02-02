@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using YG;
 
 public class WindowWinController : WindowController
 {
@@ -16,7 +17,8 @@ public class WindowWinController : WindowController
 
     public void SetNextLevelNumber()
     {
-        nextLevelText.text = "УРОВЕНЬ: " + (MainGameController.Instance.LevelData.LevelNumber).ToString();
+        nextLevelText.text = (YG2.lang == "ru" ? "УРОВЕНЬ " : "LEVEL ") + 
+            MainGameController.Instance.LevelData.LevelNumber;
     }
 
 }

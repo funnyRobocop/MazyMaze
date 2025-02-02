@@ -1,15 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HackLevel : MonoBehaviour
 {
 
     public int level;
+    public Button btn;
 
 	void OnGUI()
     {
         if (GUI.Button(new Rect(10,10,50,50), ""))
         {
+            btn.onClick.Invoke();
+            return;
+            
             if (level < 0)
                 return;
             MainGameController.Instance.LevelData.LevelNumber = level;

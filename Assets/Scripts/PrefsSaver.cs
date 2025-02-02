@@ -15,7 +15,7 @@ public class PrefsSaver : MonoBehaviour
         Settings.control = PlayerPrefs.GetInt("control", 1);
         MainGameController.Instance.LevelData.LevelNumber = PlayerPrefs.GetInt("levelNumber", 1);
 #else        
-        Settings.soundOn = YG2.saves.soundOn == 1;
+        Settings.soundOn = YG2.saves.soundOn == 0;
         Settings.control = YG2.saves.control;
         MainGameController.Instance.LevelData.LevelNumber = YG2.saves.levelNumber;
 
@@ -27,10 +27,10 @@ public class PrefsSaver : MonoBehaviour
     public void SaveSound()
     {
 #if UNITY_ANDROID
-        PlayerPrefs.SetInt("soundOn", Settings.soundOn ? 1 : 0);
+        PlayerPrefs.SetInt("soundOn", Settings.soundOn ? 0 : 1);
         PlayerPrefs.Save();
 #else 
-        YG2.saves.soundOn = Settings.soundOn ? 1 : 0;
+        YG2.saves.soundOn = Settings.soundOn ? 0 : 1;
         YG2.SaveProgress();
 #endif
     }
