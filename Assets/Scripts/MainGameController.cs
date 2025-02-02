@@ -104,7 +104,7 @@ public class MainGameController : MonoBehaviour
 			GameObject.Destroy(item.gameObject);
 	}
 
-	private void SetupCamera()
+	public void SetupCamera()
 	{
 		Camera.main.transform.position = new Vector3 (levelData.Cols * Constants.TILE_SIZE / 2 - Constants.TILE_SIZE / 2, 
 		                                              levelData.Rows * Constants.TILE_SIZE / 2 - Constants.TILE_SIZE / 2,
