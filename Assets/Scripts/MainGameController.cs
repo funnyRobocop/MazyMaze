@@ -8,7 +8,7 @@ public class MainGameController : MonoBehaviour
 
 	private const int CAMERA_Z_POSITION = -10;
 	private const float CAMERA_SIZE_FACTOR = 2.15f;
-    private const float MIN_CAMERA_SIZE = 10f;
+    private const float MIN_CAMERA_SIZE = 14f;
 
 
     [SerializeField] private MazePartGameController mazePart;

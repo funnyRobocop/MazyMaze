@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
+using TMPro;
 
 public class GameUIController : MonoBehaviour 
 {
 
-	[SerializeField] private Text swapCountText;
-    [SerializeField] private Text levelNumberText;
+	[SerializeField] private TextMeshProUGUI swapCountText;
+    [SerializeField] private TextMeshProUGUI levelNumberText;
 
     public ScaledUIView scaledUIView { get; set; }
     public static GameUIController Instance { get; private set;}
@@ -19,17 +18,19 @@ public class GameUIController : MonoBehaviour
 
 	public void SetSwapCountText()
 	{
-		swapCountText.text = "SWAPS: " + MainGameController.Instance.LevelEndChecker.currentSwapCount;
+        if (swapCountText != null)
+		    swapCountText.text = "SWAPS: " + MainGameController.Instance.LevelEndChecker.currentSwapCount;
     }
 
     public void SetSwapCountText(int count)
     {
-        swapCountText.text = "SWAPS: " + count;
+        if (swapCountText != null)
+            swapCountText.text = "SWAPS: " + count;
     }
 
     public void SetLevelNumberText()
     {
-        levelNumberText.text = "LEVEL: " + MainGameController.Instance.LevelData.LevelNumber;
+        levelNumberText.text = "УРОВЕНЬ: " + MainGameController.Instance.LevelData.LevelNumber;
     }
 
     public void ShowSettings()

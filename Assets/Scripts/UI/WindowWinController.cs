@@ -1,11 +1,11 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using TMPro;
+using UnityEngine;
 
 public class WindowWinController : WindowController
 {
 
     [SerializeField]
-    private Text nextLevelText;
+    private TextMeshProUGUI nextLevelText;
 
 
     void OnEnable()
@@ -16,7 +16,7 @@ public class WindowWinController : WindowController
 
     public void SetNextLevelNumber()
     {
-        nextLevelText.text = "Level: " + (MainGameController.Instance.LevelData.LevelNumber).ToString();
+        nextLevelText.text = "УРОВЕНЬ: " + (MainGameController.Instance.LevelData.LevelNumber).ToString();
     }
 
 }
