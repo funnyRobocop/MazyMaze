@@ -39,9 +39,6 @@ public class WindowSettingsController : WindowController
         Settings.soundOn = value;
         PrefsSaver.Instance.SaveSound();
         soundOnSprite.SetActive(value);
-
-        if (value)
-            AudioController.Instance.PlayClick();
     }
 
     private void ChangeTouch(bool value)
@@ -88,7 +85,6 @@ public class WindowSettingsController : WindowController
             Settings.control = (int)Settings.ControlsType.Accelerometer;
 
         PrefsSaver.Instance.SaveControl();
-        AudioController.Instance.PlayClick();
 
         MainGameController.Instance.PuzzlePart.SetInputController();
     }

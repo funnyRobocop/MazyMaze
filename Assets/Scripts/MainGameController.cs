@@ -65,6 +65,8 @@ public class MainGameController : MonoBehaviour
 		levelEndChecker.enabled = false;
 
         this.Invoke(1f, GameUIController.Instance.ShowLevelWin);
+
+        YG2.SetLeaderboard("level", LevelData.LevelNumber);
     }
 
 	public void RestartGame()

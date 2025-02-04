@@ -7,8 +7,6 @@ public class AudioController : MonoBehaviour
     [SerializeField]
     private AudioSource move;
     [SerializeField]
-    private AudioSource click;
-    [SerializeField]
     private AudioSource swipe;
     [SerializeField]
     private AudioSource win;
@@ -26,12 +24,6 @@ public class AudioController : MonoBehaviour
     {
         if (Settings.soundOn)
             move.Play();
-    }
-
-    public void PlayClick()
-    {
-        if (Settings.soundOn)
-            click.Play();
     }
 
     public void PlaySwipe()
