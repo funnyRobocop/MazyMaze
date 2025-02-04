@@ -14,7 +14,6 @@ public class SwipeInputController : IInputController
 
     public bool CheckInput(Vector3 emptyTilePosition, ref Vector3 hitPosition)
     {
-#if UNITY_EDITOR
         if (Input.GetMouseButtonDown(LEFT_MOUSE_BUTTON))
         {
             swipeStart = Input.mousePosition;
@@ -23,16 +22,6 @@ public class SwipeInputController : IInputController
         if (Input.GetMouseButtonUp(LEFT_MOUSE_BUTTON))
         {
             swipeEnd = Input.mousePosition;
-#else
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
-        {
-            swipeStart = Input.touches[0].position;
-        }
-
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Ended)
-        {
-            swipeEnd = Input.touches[0].position;
-#endif
             Vector3 delta = swipeEnd - swipeStart;
 
             if (Mathf.Abs(delta.x) < 1 && Mathf.Abs(delta.y) < 1)

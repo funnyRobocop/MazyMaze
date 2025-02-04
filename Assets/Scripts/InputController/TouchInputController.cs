@@ -9,15 +9,10 @@ public class TouchInputController : IInputController
 
     public bool CheckInput(Vector3 emptyTilePosition, ref Vector3 hitPosition)
     {
-#if UNITY_EDITOR
         if (Input.GetMouseButtonUp(LEFT_MOUSE_BUTTON))
         {
             Vector3 inputPosition = Input.mousePosition;
-#else
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Ended)
-        {
-            Vector3 inputPosition = Input.touches[0].position;
-#endif
+
             Ray inputRay = Camera.main.ScreenPointToRay(inputPosition);
 
             float deltaX = Mathf.Abs(inputRay.origin.x - emptyTilePosition.x);
@@ -34,3 +29,4 @@ public class TouchInputController : IInputController
         return false;
     }
 }
+

@@ -32,6 +32,8 @@ public class MainGameController : MonoBehaviour
 	{
 		Instance = this;
 		enabled = false;
+        Application.targetFrameRate = 60;
+        Input.multiTouchEnabled = false;
 	}
 
     void OnEnable()
