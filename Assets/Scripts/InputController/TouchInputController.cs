@@ -18,8 +18,8 @@ public class TouchInputController : IInputController
             float deltaX = Mathf.Abs(inputRay.origin.x - emptyTilePosition.x);
 			float deltaY = Mathf.Abs(inputRay.origin.y - emptyTilePosition.y);
 
-            if ((deltaX < Constants.TILE_SIZE * 1.5f && deltaY < Constants.TILE_SIZE * 0.5f) || 
-			    (deltaY < Constants.TILE_SIZE * 1.5f && deltaX < Constants.TILE_SIZE * 0.5f))
+            if ((deltaX < Constant.TILE_SIZE * 1.5f && deltaY < Constant.TILE_SIZE * 0.5f) || 
+			    (deltaY < Constant.TILE_SIZE * 1.5f && deltaX < Constant.TILE_SIZE * 0.5f))
             {
                 hitPosition = inputRay.origin;
                 return true;

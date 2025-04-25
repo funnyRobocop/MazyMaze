@@ -46,7 +46,7 @@ public class MainGameController : MonoBehaviour
 #if UNITY_WEBGL
         YG2.InterstitialAdvShow();
 #else
-
+        AdsInterstitial.Instance.ShowInterstitial();
 #endif
     }
 
@@ -119,8 +119,8 @@ public class MainGameController : MonoBehaviour
 
 	public void SetupCamera()
 	{
-		Camera.main.transform.position = new Vector3 (levelData.Cols * Constants.TILE_SIZE / 2 - Constants.TILE_SIZE / 2, 
-		                                              levelData.Rows * Constants.TILE_SIZE / 2 - Constants.TILE_SIZE / 2,
+		Camera.main.transform.position = new Vector3 (levelData.Cols * Constant.TILE_SIZE / 2 - Constant.TILE_SIZE / 2, 
+		                                              levelData.Rows * Constant.TILE_SIZE / 2 - Constant.TILE_SIZE / 2,
 		                                              CAMERA_Z_POSITION);
 
 		Camera.main.orthographicSize = MIN_CAMERA_SIZE + (levelData.Rows - 4) * CAMERA_SIZE_FACTOR;

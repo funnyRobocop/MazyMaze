@@ -78,8 +78,8 @@ public class PuzzlePartGameController : MonoBehaviour
         {
             animatedTileView = hit.collider.GetComponent<TileView>();
             startPosition = animatedTileView.ThisTransform.localPosition;
-            goalPosition = new Vector2(((int)(emptyTileView.ThisTransform.localPosition.x / Constants.TILE_SIZE)) * Constants.TILE_SIZE,
-                                       ((int)(emptyTileView.ThisTransform.localPosition.y / Constants.TILE_SIZE)) * Constants.TILE_SIZE);
+            goalPosition = new Vector2(((int)(emptyTileView.ThisTransform.localPosition.x / Constant.TILE_SIZE)) * Constant.TILE_SIZE,
+                                       ((int)(emptyTileView.ThisTransform.localPosition.y / Constant.TILE_SIZE)) * Constant.TILE_SIZE);
             emptyTileView.ThisTransform.position = animatedTileView.ThisTransform.localPosition;
             state = State.Animating;
         }

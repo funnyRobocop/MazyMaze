@@ -29,12 +29,12 @@ public class SwipeInputController : IInputController
 
             if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
             {
-                hitPosition = new Vector3(emptyTilePosition.x + Constants.TILE_SIZE * Mathf.Sign(delta.x) * -1, emptyTilePosition.y);
+                hitPosition = new Vector3(emptyTilePosition.x + Constant.TILE_SIZE * Mathf.Sign(delta.x) * -1, emptyTilePosition.y);
                 return true;
             }
             else
             {
-                hitPosition = new Vector3(emptyTilePosition.x, emptyTilePosition.y + Constants.TILE_SIZE * Mathf.Sign(delta.y) * -1);
+                hitPosition = new Vector3(emptyTilePosition.x, emptyTilePosition.y + Constant.TILE_SIZE * Mathf.Sign(delta.y) * -1);
                 return true;
             }
         }
