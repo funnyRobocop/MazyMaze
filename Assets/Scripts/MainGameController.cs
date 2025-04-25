@@ -1,4 +1,4 @@
-﻿using YG;
+﻿//using YG;
 using UnityEngine;
 using System.Collections;
 using System;
@@ -8,7 +8,7 @@ public class MainGameController : MonoBehaviour
 
 	private const int CAMERA_Z_POSITION = -10;
 	private const float CAMERA_SIZE_FACTOR = 2.5f;
-    private const float MIN_CAMERA_SIZE = 14f;
+    private const float MIN_CAMERA_SIZE = 18f;
 
 
     [SerializeField] private MazePartGameController mazePart;
@@ -43,7 +43,11 @@ public class MainGameController : MonoBehaviour
 
     public void ShowInterstitial()
     {
+#if UNITY_WEBGL
         YG2.InterstitialAdvShow();
+#else
+
+#endif
     }
 
     public void PauseGame()
@@ -66,7 +70,12 @@ public class MainGameController : MonoBehaviour
 
         this.Invoke(1f, GameUIController.Instance.ShowLevelWin);
 
+#if UNITY_WEBGL
         YG2.SetLeaderboard("level", LevelData.LevelNumber);
+#else
+
+#endif
+        //todo SetLeaderboard
     }
 
 	public void RestartGame()

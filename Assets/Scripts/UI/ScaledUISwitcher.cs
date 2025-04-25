@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using YG.Example;
-using YG;
 
 public class ScaledUISwitcher : MonoBehaviour
 {

@@ -1,3 +1,0 @@
-Build path: C:/Projects/15PuzzleMaze/Builds
-Build number: 8
-PluginYG version: 2.0032

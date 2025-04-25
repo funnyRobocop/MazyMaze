@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using YG;
+//using YG;
 
 public class PrefsSaver : MonoBehaviour
 {
