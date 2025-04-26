@@ -7,7 +7,7 @@ public class MainGameController : MonoBehaviour
 {
 
 	private const int CAMERA_Z_POSITION = -10;
-	private const float CAMERA_SIZE_FACTOR = 2.5f;
+	private const float CAMERA_SIZE_FACTOR = 5f;
     private const float MIN_CAMERA_SIZE = 18f;
 
 

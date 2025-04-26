@@ -15,9 +15,10 @@ public class LevelData
 
     public void Setup()
     {
+        //LevelNumber = 5; for test
         Rows = Cols = 3 + (int)Mathf.Ceil(LevelNumber / 10f);
 
-        SwapCount = 5 + LevelNumber;
+        SwapCount = 3 + LevelNumber;
 
         /*SwapCount = (int)Mathf.Ceil(Mathf.Sqrt(LevelNumber) * 1.8f);
 
